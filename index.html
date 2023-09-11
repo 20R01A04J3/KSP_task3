@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+         body {
+            background-image: url('Ferrari-SF90.jpg'); 
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8); 
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.3); 
+        }
+        h1 {
+            text-align: center;
+            font-size: 3em; 
+        }
+         label {
+            text-align: left;
+            display: inline-block;
+            width: 150px; 
+        }
+
+        .submit {
+            text-align: center;
+        }
+        .submit button {
+            background-color: #007BFF; 
+            color: #fff; 
+            padding: 10px 20px; 
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: background-color 0.3s ease; 
+        }
+        .submit button:hover {
+            background-color: #0056b3; 
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <h1><i>FORM</i></h1>
+
+        <label for="fname">FIRST NAME:</label>
+        <input type="text" id="fname"><br><br>
+
+        <label for="lname">LAST NAME:</label>
+        <input type="text" id="lname"><br><br>
+
+        <label for="email">EMAIL ID:</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="number">PHONE NO:</label>
+        <input type="number" id="number"><br><br>
+
+        <label for="DOB">DATE OF BIRTH:</label>
+        <input type="date" id="DOB"><br><br>
+
+        <label for="message">MESSAGE:</label>
+        <textarea name="MESSAGE" id="message" cols="30" rows="10"></textarea><br><br>
+
+        <div class="submit">
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
